@@ -34,7 +34,7 @@ At present, OmniCourse-Agent is not on browser extension portals - its artifacts
 
 1. Decompress the zip file on your file system
 
-1. In Chrome, open the ["extensions" page](chrome://extensions)
+1. In Chrome, click on _Menu_ :: **More tools** :: **Extensions**
 
 1. Enable the **Developer mode**
 
@@ -46,7 +46,7 @@ At present, OmniCourse-Agent is not on browser extension portals - its artifacts
 
 1. Download the **.xpi** file from OmniCourse-Agent's release page
 
-1. In Firefox, open the ["add-ons" page](about:addons)
+1. In Firefox, click on _Menu_ :: **Add-ons**
 
 1. Click on the menu next to _Manage your extensions_ and select **Install Add-On from file...**
 
