@@ -2,6 +2,8 @@
 
 _Browser extension for OmniCourse descriptors_
 
+[![Build Status](https://travis-ci.org/giancosta86/OmniCourse-Agent.svg?branch=master)](https://travis-ci.org/giancosta86/OmniCourse-Agent)
+
 ## Introduction
 
 ![Screenshot](screenshots/descriptor.png)
