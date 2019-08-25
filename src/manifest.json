@@ -1,0 +1,91 @@
+{
+  "manifest_version": 2,
+
+  "name": "OmniCourse-Agent",
+  "version": "0.1",
+  "description": "OmniCourse descriptor generator",
+
+  "author": "Gianluca Costa",
+
+  "homepage_url": "https://github.com/giancosta86/OmniCourse-Agent",
+
+  "permissions": ["tabs"],
+
+  "background": {
+    "scripts": ["utils/platform.js", "background.js"]
+  },
+
+  "page_action": {
+    "default_title": "OmniCourse descriptor",
+
+    "default_popup": "page-popup.html",
+
+    "default_icon": {
+      "16": "images/mainIcon16.png",
+      "32": "images/mainIcon32.png",
+      "48": "images/mainIcon48.png",
+      "128": "images/mainIcon128.png"
+    }
+  },
+
+  "icons": {
+    "16": "images/mainIcon16.png",
+    "32": "images/mainIcon32.png",
+    "48": "images/mainIcon48.png",
+    "128": "images/mainIcon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.pluralsight.com/courses/*"],
+      "run_at": "document_idle",
+      "js": [
+        "utils/platform.js",
+        "utils/date-time.js",
+        "utils/parsing.js",
+        "portals/pluralsight.js",
+        "course-detector.js",
+        "content-script.js"
+      ]
+    },
+
+    {
+      "matches": ["https://*.udemy.com/*"],
+      "run_at": "document_idle",
+      "js": [
+        "utils/platform.js",
+        "utils/date-time.js",
+        "utils/parsing.js",
+        "portals/udemy.js",
+        "course-detector.js",
+        "content-script.js"
+      ]
+    },
+
+    {
+      "matches": ["https://*.packtpub.com/*"],
+      "run_at": "document_idle",
+      "js": [
+        "utils/platform.js",
+        "utils/date-time.js",
+        "utils/parsing.js",
+        "portals/packt.js",
+        "course-detector.js",
+        "content-script.js"
+      ]
+    },
+
+    {
+      "matches": ["https://*.linkedin.com/learning/*"],
+      "run_at": "document_idle",
+      "js": [
+        "utils/platform.js",
+        "utils/date-time.js",
+        "utils/parsing.js",
+        "portals/linkedIn.js",
+        "course-detector.js",
+        "content-script.js"
+      ]
+    }
+  ]
+}

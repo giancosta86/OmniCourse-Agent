@@ -1,0 +1,17 @@
+language: node_js
+
+before_script: npm run build
+
+script: npm run package
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  skip_cleanup: true
+  file_glob: true
+  file: "dist/*.zip"
+  draft: true
+
+  on:
+    branch: master
+    tags: true

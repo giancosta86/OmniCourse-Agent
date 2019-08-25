@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>OmniCourse-Agent</title>
+
+    <script src="utils/platform.js"></script>
+    <script src="page-popup.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="page-popup.css" />
+  </head>
+
+  <body>
+    <div id="waiting-box">
+      <img id="waiting-picture" alt="Waiting" src="images/waiting.svg" />
+
+      <span id="waiting-message">Looking for a course on this page...</span>
+    </div>
+
+    <textarea
+      id="descriptor-area"
+      class="off-screen"
+      spellcheck="false"
+    ></textarea>
+    <button id="copy-button" class="off-screen">Copy to clipboard</button>
+  </body>
+</html>

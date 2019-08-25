@@ -1,0 +1,43 @@
+{
+  "name": "omnicourse-agent",
+  "version": "0.9.0",
+  "private": true,
+  "description": "Browser extension for OmniCourse descriptors",
+  "scripts": {
+    "clean": "rimraf build dist",
+    "build": "node create-build.js",
+    "build:watch": "watch --interval=2 'npm run build' src",
+    "start": "npm run build:watch",
+    "package": "rimraf dist && mkdirp dist && node create-package.js"
+  },
+  "author": {
+    "name": "Gianluca Costa",
+    "url": "https://gianlucacosta.info/",
+    "email": "gianluca@gianlucacosta.info"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/giancosta86/OmniCourse-Agent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giancosta86/OmniCourse-Agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/giancosta86/OmniCourse-Agent/issues"
+  },
+  "keywords": [
+    "OmniCourse",
+    "browser",
+    "extension",
+    "JSON",
+    "descriptor",
+    "generator"
+  ],
+  "devDependencies": {
+    "archiver": "^3.1.1",
+    "cpr": "^3.0.1",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^3.0.0",
+    "svg2img": "^0.6.1",
+    "watch": "^1.0.2"
+  }
+}
