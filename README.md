@@ -22,6 +22,36 @@ _Browser extension for OmniCourse descriptors_
 
 **Please, note**: when missing, some fields could be initialized to a sensible default value - for example, **completionDate** defaults to _the current date_.
 
+## Installation
+
+At present, OmniCourse-Agent is not on browser extension portals - its artifacts are published on GitHub as dedicated releases.
+
+### Chrome
+
+1. Download the **-chrome.zip** file from OmniCourse-Agent's release page
+
+1. Decompress the zip file on your file system
+
+1. In Chrome, open the ["extensions" page](chrome://extensions)
+
+1. Enable the **Developer mode**
+
+1. Click on **Load unpacked**
+
+1. Select the directory created by the zip file
+
+### Firefox
+
+1. Download the **.xpi** file from OmniCourse-Agent's release page
+
+1. In Firefox, open the ["add-ons" page](about:addons)
+
+1. Click on the menu next to _Manage your extensions_ and select **Install Add-On from file...**
+
+1. Select the downloaded file
+
+1. Confirm
+
 ## Supported providers
 
 OmniCourse-Agent now supports the following course portals:
