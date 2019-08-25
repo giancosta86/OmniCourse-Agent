@@ -87,4 +87,6 @@ OmniCourse-Agent is designed to parse course pages to create OmniCourse descript
 
 ## Further references
 
+- [Blog entry](https://gianlucacosta.info/blog/omnicourse-agent) on Gianluca Costa's Creations
+
 - [OmniCourse](https://github.com/giancosta86/OmniCourse) - React component for drill-down chart analysis of online courses
